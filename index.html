@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quản lý Món Ăn</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="input-container">
+    <input type="text" id="foodName" placeholder="Tên món ăn">
+    <input type="url" id="foodImage" placeholder="Hình ảnh món ăn">
+    <input type="text" id="foodPrice" placeholder="Giá món ăn">
+    <button onclick="createFood()">Thêm món ăn</button>
+    <button onclick="clearInputs()">Xoá dữ liệu</button>
+    <input type="text" id="searchInput" placeholder="Nhập tên món ăn...">
+    <button onclick="searchFood()">Tìm kiếm</button>
+</div>
+
+
+
+<div class="table-container">
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Stt</th>
+                <th>Tên món ăn</th>
+                <th>Hình ảnh</th>
+                <th>Giá</th>
+                <th>Cập nhật</th>
+            </tr>
+        </thead>
+        <tbody id="tbl"></tbody>
+    </table>
+</div>
+
+<div id="editModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Chỉnh sửa thông tin món ăn</h2>
+    <input type="text" id="editName" placeholder="Tên món ăn"><br>
+    <input type="text" id="editImage" placeholder="Đường link hình ảnh"><br>
+    <input type="text" id="editPrice" placeholder="Giá"><br>
+    <button onclick="saveEdit()">Lưu</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

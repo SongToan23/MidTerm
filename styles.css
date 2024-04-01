@@ -1,0 +1,113 @@
+/* Thiết lập các ô input */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="url"],
+.input-container button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước ô */
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="url"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Thiết lập bảng dữ liệu */
+.table-container {
+    margin-top: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+}
+
+/* Nút xoá */
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Ẩn ban đầu */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  input[type="text"], button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  
